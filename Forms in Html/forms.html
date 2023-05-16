@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos/ ">
+      <label for="username">Enter Username</label>
+      <input id="username" type="text" placeholder="username" name="username" />
+      <br />
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="password"
+        name="Password"
+      />
+      <br />
+      <label for="color">Color</label>
+      <input id="color" type="color" name="color" />
+      <br />
+      <label for="number">Number</label>
+      <input id="number" type="number" placeholder="number" name="" />
+      <br />
+      <button>Submit</button>
+    </form>
+    <h2>Hijacking searches</h2>
+    <h3>Reddit</h3>
+    <form action="https://www.reddit.com/search/">
+      <input type="text" name="q" />
+      <button>Search Reddit</button>
+    </form>
+    <h3>Google</h3>
+    <form action="https://www.google.com/search?">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+    <h3>Youtube</h3>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>Search Youtube</button>
+    </form>
+    <h2>More inputs</h2>
+    <form action="/birds/">
+      <input type="checkbox" name="agree_tos" id="agree" />
+      <label for="agree">I agree to</label>
+      <button>Submit</button>
+    </form>
+    <form action="/birds/">
+      <input type="radio" name="agree_tos" id="agree" value="heheh" />
+      <label for="agree">I agree to</label>
+      <input type="radio" name="agree_tos" id="agree" value="hohoho" />
+      <label for="agree">I disagree to</label>
+      <input type="radio" name="agree_tos" id="agree" value="hahahah" />
+      <label for="agree">I Partially agree to</label>
+      <button>Submit</button>
+    </form>
+    <form action="/birds/">
+      <select name="meal" id="meal">
+        <option value="" selected>Choose the option</option>
+        <option value="dal">DAL</option>
+        <option value="chawal">CHAWAL</option>
+        <option value="roti">Roti</option>
+        <option value="sabji">Sabji</option>
+      </select>
+    </form>
+    <form action="/birds/">
+      <label for="cheese">Amount of Cheese</label>
+      <input type="range" name="hahahah" id="cheese" min="0" max="100" />
+      <button>Submit</button>
+    </form>
+    <h2>Validations Dem0</h2>
+    <form action="/dummy/">
+      <label for="first">First Name</label>
+      <input type="text" name="first" id="first" required />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery List App</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      th {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grocery List App</h1>
+    <p>Enter item and price, and click Add to add them to the list.</p>
+    <input type="text" id="item" placeholder="Item" />
+    <input type="number" id="price" placeholder="Price" />
+    <button onclick="addItem()">Add</button>
+    <table id="groceryList">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th id="totalPrice">0</th>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="question3.js"></script>
+  </body>
+</html>

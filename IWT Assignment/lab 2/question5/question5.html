@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cascading Dropdown with Div Tag</title>
+    <link rel="stylesheet" href="question5.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <label for="subject">Subject:</label>
+        <select id="subject">
+          <option value="">Select subject</option>
+          <option value="Front-end">Front-end</option>
+          <option value="Back-end">Back-end</option>
+        </select>
+
+        <label for="topic">Topics:</label>
+        <select id="topic" disabled>
+          <option value="">Please select subject first</option>
+        </select>
+
+        <label for="chapter">Chapters:</label>
+        <select id="chapter" disabled>
+          <option value="" pl>Please select a topic first</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+    <script src="question5.js"></script>
+  </body>
+</html>
